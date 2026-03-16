@@ -1,0 +1,19 @@
+{
+  "overview": {
+    "progress": { "class": 0.72, "you": 0.65 },
+    "weakness": ["等压线判读", "锋面类型识别"],
+    "shortboard": ["地形剖面定量化", "海陆风成因串联"]
+  },
+  "mind": {
+    "student": { "id": "stu", "name": "你的思维树", "children": [{ "name": "气候", "children": [{ "name": "季风" }, { "name": "锋面" }] }, { "name": "地形", "children": [{ "name": "剖面" }] }] },
+    "teacher": { "id": "pro", "name": "名师思维树", "children": [{ "name": "气候", "children": [{ "name": "季风-热力环流" }, { "name": "锋面-气团性质" }] }, { "name": "地形", "children": [{ "name": "剖面-定量分析" }] }] }
+  },
+  "local": {
+    "region": "华北平原",
+    "ecology": ["黄土涵养", "盐碱地改良"],
+    "industry": ["粮食主产区", "高端制造"],
+    "landform": ["扇形冲积平原", "微地形起伏"]
+  }
+}
+
+

@@ -1,0 +1,204 @@
+{
+  "scenarios": [
+    {
+      "id": "volcano_observation",
+      "name": "火山喷发观测",
+      "type": "自然地理",
+      "description": "观察火山喷发过程，记录温度变化，分析火山地貌形成",
+      "tasks": [
+        {
+          "id": "t1",
+          "title": "观察岩浆喷发",
+          "type": "基础观测",
+          "score": 10,
+          "description": "观察并记录岩浆喷发的特征"
+        },
+        {
+          "id": "t2",
+          "title": "记录温度变化",
+          "type": "基础观测",
+          "score": 15,
+          "description": "使用温度计记录火山口附近的温度变化"
+        },
+        {
+          "id": "t3",
+          "title": "分析火山地貌形成",
+          "type": "综合分析",
+          "score": 20,
+          "description": "分析火山地貌的形成过程和影响因素"
+        }
+      ],
+      "knowledge": [
+        {
+          "point": "地壳运动与地表形态",
+          "desc": "火山活动是地壳运动的表现形式之一，形成火山地貌"
+        },
+        {
+          "point": "板块构造",
+          "desc": "火山多分布在板块边界，特别是消减带和热点活动区"
+        }
+      ],
+      "textbookChapter": "必修一·第二章"
+    },
+    {
+      "id": "monsoon_experience",
+      "name": "季风环流体验",
+      "type": "自然地理",
+      "description": "切换冬夏季风，分析气温与风向，测量降水差异",
+      "tasks": [
+        {
+          "id": "t4",
+          "title": "切换冬夏季风",
+          "type": "基础观测",
+          "score": 10,
+          "description": "观察并切换冬夏季风模式"
+        },
+        {
+          "id": "t5",
+          "title": "分析气温与风向",
+          "type": "综合分析",
+          "score": 15,
+          "description": "分析不同季节的气温变化和风向特征"
+        },
+        {
+          "id": "t6",
+          "title": "测量降水差异",
+          "type": "综合分析",
+          "score": 20,
+          "description": "测量并比较不同季节的降水差异"
+        }
+      ],
+      "knowledge": [
+        {
+          "point": "大气运动",
+          "desc": "季风是由于海陆热力性质差异形成的周期性风向变化"
+        },
+        {
+          "point": "热力环流",
+          "desc": "不均匀加热导致气压差，形成空气流动"
+        }
+      ],
+      "textbookChapter": "必修一·第三章"
+    },
+    {
+      "id": "karst_cave_explore",
+      "name": "喀斯特溶洞探索",
+      "type": "自然地理",
+      "description": "识别石笋石柱，查找暗河流向，分析碳酸钙沉积",
+      "tasks": [
+        {
+          "id": "t7",
+          "title": "识别石笋石柱",
+          "type": "基础观测",
+          "score": 10,
+          "description": "识别并区分石笋和石柱的特征"
+        },
+        {
+          "id": "t8",
+          "title": "查找暗河流向",
+          "type": "综合分析",
+          "score": 15,
+          "description": "探索并记录地下暗河的流向"
+        },
+        {
+          "id": "t9",
+          "title": "分析碳酸钙沉积",
+          "type": "综合分析",
+          "score": 20,
+          "description": "分析碳酸钙沉积的形成过程"
+        }
+      ],
+      "knowledge": [
+        {
+          "point": "地表形态的塑造",
+          "desc": "喀斯特地貌是流水溶蚀作用形成的特殊地貌"
+        },
+        {
+          "point": "化学风化",
+          "desc": "碳酸钙在酸性水的作用下发生溶解和沉积"
+        }
+      ],
+      "textbookChapter": "必修一·第二章"
+    },
+    {
+      "id": "urban_function",
+      "name": "城市功能分区",
+      "type": "人文地理",
+      "description": "观察热力图，分析风向与污染，探索功能区布局",
+      "tasks": [
+        {
+          "id": "t10",
+          "title": "观察热力图",
+          "type": "基础观测",
+          "score": 10,
+          "description": "观察城市热力图的分布特征"
+        },
+        {
+          "id": "t11",
+          "title": "分析风向与污染",
+          "type": "综合分析",
+          "score": 15,
+          "description": "分析风向对污染物扩散的影响"
+        },
+        {
+          "id": "t12",
+          "title": "探索功能区布局",
+          "type": "综合分析",
+          "score": 20,
+          "description": "探索并分析城市功能区的布局规律"
+        }
+      ],
+      "knowledge": [
+        {
+          "point": "城市地理",
+          "desc": "城市功能区包括商业区、住宅区、工业区等"
+        },
+        {
+          "point": "职住分离",
+          "desc": "现代城市中工作地点和居住地点的分离现象"
+        }
+      ],
+      "textbookChapter": "必修二·第四章"
+    },
+    {
+      "id": "settlement_planning",
+      "name": "聚落选址挑战",
+      "type": "人文地理",
+      "description": "评估选址优缺点，模拟降雨测试，理解环境适应性",
+      "tasks": [
+        {
+          "id": "t13",
+          "title": "评估选址优缺点",
+          "type": "综合分析",
+          "score": 15,
+          "description": "评估不同选址方案的优缺点"
+        },
+        {
+          "id": "t14",
+          "title": "模拟降雨测试",
+          "type": "创新探究",
+          "score": 20,
+          "description": "通过模拟降雨测试选址的合理性"
+        },
+        {
+          "id": "t15",
+          "title": "理解环境适应性",
+          "type": "综合分析",
+          "score": 25,
+          "description": "理解聚落选址与环境适应性的关系"
+        }
+      ],
+      "knowledge": [
+        {
+          "point": "区域可持续发展",
+          "desc": "聚落选址需要考虑自然环境和社会经济因素"
+        },
+        {
+          "point": "人地关系",
+          "desc": "人类活动与地理环境的相互影响"
+        }
+      ],
+      "textbookChapter": "必修三·第五章"
+    }
+  ]
+}

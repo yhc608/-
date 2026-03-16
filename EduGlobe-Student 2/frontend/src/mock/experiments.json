@@ -1,0 +1,109 @@
+{
+  "experiments": [
+    {
+      "id": "heat_circulation",
+      "name": "热力环流模拟实验",
+      "knowledgeModule": "大气运动",
+      "textbookChapter": "必修一·第三章",
+      "tags": ["热力环流", "大气运动", "高一"],
+      "description": "通过模拟不同温度差异下的空气流动，观察热力环流的形成过程",
+      "variables": [
+        {
+          "key": "热源强度",
+          "type": "button",
+          "options": ["30℃", "60℃", "100℃"],
+          "default": "60℃",
+          "description": "热源温度越高，上升气流越强"
+        },
+        {
+          "key": "冷源强度",
+          "type": "button",
+          "options": ["-20℃", "0℃", "20℃"],
+          "default": "0℃",
+          "description": "冷源温度越低，下沉气流越强"
+        },
+        {
+          "key": "空间密闭性",
+          "type": "button",
+          "options": ["开放", "密闭"],
+          "default": "密闭",
+          "description": "密闭空间有利于形成完整的环流"
+        }
+      ],
+      "principle": "热力环流是由于地面冷热不均而形成的空气环流。热源处空气受热膨胀上升，冷源处空气冷却收缩下沉，形成垂直运动。在水平方向上，空气从高压区流向低压区，从而形成闭合的环流系统。"
+    },
+    {
+      "id": "atmospheric_insulation",
+      "name": "大气保温作用模拟实验",
+      "knowledgeModule": "大气受热过程",
+      "textbookChapter": "必修一·第三章",
+      "tags": ["大气保温", "温室效应", "高一"],
+      "description": "对比有无大气层情况下的温度变化，理解大气的保温作用",
+      "variables": [
+        {
+          "key": "大气浓度",
+          "type": "button",
+          "options": ["低", "中", "高"],
+          "default": "中",
+          "description": "大气浓度越高，保温效果越强"
+        },
+        {
+          "key": "光照强度",
+          "type": "button",
+          "options": ["弱", "中", "强"],
+          "default": "中",
+          "description": "光照强度影响初始升温速度"
+        },
+        {
+          "key": "昼夜状态",
+          "type": "button",
+          "options": ["白天", "黑夜"],
+          "default": "白天",
+          "description": "夜间观察保温效果的差异"
+        }
+      ],
+      "principle": "大气对太阳短波辐射吸收较少，但对地面长波辐射有较强的吸收能力。白天，大气吸收地面长波辐射增温；夜间，大气以长波辐射的形式向地面释放热量，起到保温作用。大气浓度越高，保温效果越明显。"
+    },
+    {
+      "id": "soil_erosion",
+      "name": "水土流失模拟实验",
+      "knowledgeModule": "地表形态的塑造",
+      "textbookChapter": "必修一·第二章",
+      "tags": ["水土流失", "地表形态", "高一"],
+      "description": "探究植被、坡度、降水强度等因素对水土流失的影响",
+      "variables": [
+        {
+          "key": "植被覆盖",
+          "type": "button",
+          "options": ["无", "稀疏", "茂密"],
+          "default": "稀疏",
+          "description": "植被通过根系固定土壤，叶片减缓雨滴冲击"
+        },
+        {
+          "key": "地面坡度",
+          "type": "button",
+          "options": ["0°", "30°", "60°"],
+          "default": "30°",
+          "description": "坡度越大，水流冲击力越大，侵蚀越严重"
+        },
+        {
+          "key": "降水强度",
+          "type": "button",
+          "options": ["小雨", "中雨", "大雨", "暴雨"],
+          "default": "中雨",
+          "description": "降水强度直接影响径流速度和侵蚀能力"
+        },
+        {
+          "key": "土壤性质",
+          "type": "button",
+          "options": ["砂质", "壤质", "黏质"],
+          "default": "壤质",
+          "description": "黏质土壤抗侵蚀能力最强"
+        }
+      ],
+      "principle": "水土流失是多种因素共同作用的结果。植被通过根系固定土壤、叶片减缓雨滴冲击力，可显著降低流失量；坡度越大、降水越强，水流冲击力越大，侵蚀越严重；黏质土壤由于颗粒细小、结构紧密，抗侵蚀能力最强。"
+    }
+  ]
+}
+
+

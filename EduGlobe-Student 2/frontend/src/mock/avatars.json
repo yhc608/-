@@ -1,0 +1,195 @@
+{
+  "characters": [
+    {
+      "id": "char_1",
+      "name": "住别",
+      "gender": "female",
+      "hairColor": "#FF6B4A",
+      "hairStyle": "short",
+      "skinTone": "#F4C2A1",
+      "avatar": "/portraits/张骞.jpg",
+      "baseAttributes": {
+        "geology": 1,
+        "atmosphere": 30,
+        "recording": 20,
+        "discussion": 10
+      }
+    },
+    {
+      "id": "char_2",
+      "name": "开题",
+      "gender": "female",
+      "hairColor": "#2C2C2C",
+      "hairStyle": "short",
+      "skinTone": "#F4C2A1",
+      "avatar": "/portraits/徐霞客.jpg",
+      "baseAttributes": {
+        "geology": 5,
+        "atmosphere": 25,
+        "recording": 25,
+        "discussion": 15
+      }
+    },
+    {
+      "id": "char_3",
+      "name": "气气观服",
+      "gender": "male",
+      "hairColor": "#A8D5E2",
+      "hairStyle": "short",
+      "skinTone": "#E8C4A0",
+      "avatar": "/portraits/张骞.jpg",
+      "baseAttributes": {
+        "geology": 10,
+        "atmosphere": 40,
+        "recording": 15,
+        "discussion": 20
+      }
+    },
+    {
+      "id": "char_4",
+      "name": "庄形",
+      "gender": "male",
+      "hairColor": "#FFFFFF",
+      "hairStyle": "short",
+      "skinTone": "#F0D4B0",
+      "avatar": "/portraits/徐霞客.jpg",
+      "baseAttributes": {
+        "geology": 35,
+        "atmosphere": 15,
+        "recording": 30,
+        "discussion": 10
+      }
+    },
+    {
+      "id": "char_5",
+      "name": "汉版",
+      "gender": "female",
+      "hairColor": "#8B4513",
+      "hairStyle": "short",
+      "skinTone": "#F4C2A1",
+      "avatar": "/portraits/张骞.jpg",
+      "baseAttributes": {
+        "geology": 20,
+        "atmosphere": 20,
+        "recording": 35,
+        "discussion": 25
+      }
+    },
+    {
+      "id": "char_6",
+      "name": "出屋",
+      "gender": "male",
+      "hairColor": "#6B8E23",
+      "hairStyle": "short",
+      "skinTone": "#E8C4A0",
+      "avatar": "/portraits/徐霞客.jpg",
+      "baseAttributes": {
+        "geology": 25,
+        "atmosphere": 25,
+        "recording": 20,
+        "discussion": 30
+      }
+    }
+  ],
+  "professions": [
+    {
+      "id": "geologist",
+      "name": "地质学家",
+      "icon": "🔨",
+      "description": "专注于地质构造、岩石矿物研究",
+      "equipment": {
+        "base": ["地质锤", "放大镜", "岩石标本袋", "罗盘"],
+        "tropical_rainforest": ["防刺靴", "驱蚊面罩", "红外测温仪", "防水背包"],
+        "polar_glacier": ["防风保暖科考服", "冰镐", "冰爪", "防滑特效"],
+        "volcano": ["耐高温防护服", "温度计", "气体检测仪", "安全头盔"],
+        "monsoon": ["便携气象站", "风速仪", "雨量计", "风向标"],
+        "karst": ["头灯", "安全绳", "水质检测仪", "地质罗盘"],
+        "urban": ["空气质量检测仪", "噪声计", "GPS定位器", "记录本"],
+        "settlement": ["地形测量仪", "土壤采样器", "环境评估工具", "规划图纸"]
+      },
+      "attributeBonus": {
+        "geology": 20,
+        "atmosphere": 5,
+        "recording": 10,
+        "discussion": 5
+      }
+    },
+    {
+      "id": "meteorologist",
+      "name": "气象观测员",
+      "icon": "🌦️",
+      "description": "专注于大气运动、气候现象观测",
+      "equipment": {
+        "base": ["便携气象站", "风速仪", "云层观测手册", "温湿度计"],
+        "tropical_rainforest": ["防刺靴", "驱蚊面罩", "红外测温仪", "便携气象站"],
+        "polar_glacier": ["防风保暖科考服", "冰镐", "冰爪", "防滑特效", "极地气象站"],
+        "volcano": ["耐高温防护服", "温度计", "气体检测仪", "安全头盔", "风向风速仪"],
+        "monsoon": ["便携气象站", "风速仪", "雨量计", "风向标", "气压计"],
+        "karst": ["头灯", "安全绳", "温湿度计", "气压计"],
+        "urban": ["空气质量检测仪", "噪声计", "便携气象站", "风向风速仪"],
+        "settlement": ["地形测量仪", "便携气象站", "环境评估工具", "气候数据分析仪"]
+      },
+      "attributeBonus": {
+        "geology": 5,
+        "atmosphere": 30,
+        "recording": 15,
+        "discussion": 10
+      }
+    },
+    {
+      "id": "ecologist",
+      "name": "生态学家",
+      "icon": "🌿",
+      "description": "专注于生态系统、生物多样性研究",
+      "equipment": {
+        "base": ["生物采样器", "植物标本夹", "放大镜", "记录本"],
+        "tropical_rainforest": ["防刺靴", "驱蚊面罩", "红外测温仪", "生物采样器", "植物识别手册"],
+        "polar_glacier": ["防风保暖科考服", "冰镐", "冰爪", "防滑特效", "极地生物采样器"],
+        "volcano": ["耐高温防护服", "温度计", "气体检测仪", "安全头盔", "生态恢复评估工具"],
+        "monsoon": ["便携气象站", "风速仪", "雨量计", "风向标", "植被覆盖度测量仪"],
+        "karst": ["头灯", "安全绳", "水质检测仪", "生物采样器", "洞穴生物记录本"],
+        "urban": ["空气质量检测仪", "噪声计", "GPS定位器", "城市生态评估工具"],
+        "settlement": ["地形测量仪", "土壤采样器", "环境评估工具", "生态规划图纸"]
+      },
+      "attributeBonus": {
+        "geology": 10,
+        "atmosphere": 10,
+        "recording": 25,
+        "discussion": 15
+      }
+    },
+    {
+      "id": "geographer",
+      "name": "地理学家",
+      "icon": "🗺️",
+      "description": "综合地理研究，涵盖自然与人文",
+      "equipment": {
+        "base": ["地图", "GPS定位器", "记录本", "相机"],
+        "tropical_rainforest": ["防刺靴", "驱蚊面罩", "红外测温仪", "GPS定位器", "地形图"],
+        "polar_glacier": ["防风保暖科考服", "冰镐", "冰爪", "防滑特效", "极地地图"],
+        "volcano": ["耐高温防护服", "温度计", "气体检测仪", "安全头盔", "地质地形图"],
+        "monsoon": ["便携气象站", "风速仪", "雨量计", "风向标", "气候分布图"],
+        "karst": ["头灯", "安全绳", "水质检测仪", "地质罗盘", "溶洞地图"],
+        "urban": ["空气质量检测仪", "噪声计", "GPS定位器", "城市功能分区图"],
+        "settlement": ["地形测量仪", "土壤采样器", "环境评估工具", "聚落规划图"]
+      },
+      "attributeBonus": {
+        "geology": 15,
+        "atmosphere": 15,
+        "recording": 20,
+        "discussion": 20
+      }
+    }
+  ],
+  "sceneEquipmentMap": {
+    "volcano_observation": "volcano",
+    "monsoon_experience": "monsoon",
+    "karst_cave_explore": "karst",
+    "urban_function": "urban",
+    "settlement_planning": "settlement",
+    "tropical_rainforest": "tropical_rainforest",
+    "polar_glacier": "polar_glacier"
+  }
+}
+
+

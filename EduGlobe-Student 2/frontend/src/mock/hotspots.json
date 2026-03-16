@@ -1,0 +1,379 @@
+{
+  "hotspots": [
+    {
+      "id": "arctic_route",
+      "name": "北极航线开发",
+      "title": "北极航线开发与极地资源竞争",
+      "category": "气候与地缘政治",
+      "lat": 75.0,
+      "lng": -40.0,
+      "heat": 95,
+      "economic": 88,
+      "climate": 92,
+      "conflict": 75,
+      "relatedKnowledge": ["全球气候变化", "洋流与航运条件", "地缘政治", "极地资源开发", "国际航运"],
+      "knowledgeChain": [
+        { "from": "北极航线开发与极地资源竞争", "to": "全球气候变化", "relation": "气候变暖导致" },
+        { "from": "全球气候变化", "to": "洋流与航运条件", "relation": "影响" },
+        { "from": "北极航线开发与极地资源竞争", "to": "地缘政治", "relation": "引发" },
+        { "from": "地缘政治", "to": "极地资源开发", "relation": "推动" }
+      ],
+      "factors": {
+        "terrain": "极地冰川",
+        "climate": "气候变暖导致冰川融化",
+        "resource": "极地资源开发"
+      },
+      "chapters": ["全球气候变化", "洋流与航运条件", "地缘政治"],
+      "cases": [
+        {
+          "id": "c1",
+          "title": "北极航线通航条件改善",
+          "summary": "气候变暖导致北极冰川融化，使得北极航线通航时间延长，航线距离缩短，带来巨大的经济收益。"
+        },
+        {
+          "id": "c2",
+          "title": "中俄合作开发",
+          "summary": "中俄两国在北极航线开发上展开合作，体现了多边化治理的国际关系原则。"
+        }
+      ],
+      "video": {
+        "url": "https://example.com/videos/arctic_route.mp4",
+        "duration": 180,
+        "description": "展示2025年北极冰川消融实况、中俄联合科考船队通航画面"
+      },
+      "audio": {
+        "url": "https://example.com/audio/arctic_route.mp3",
+        "script": "解析北极航线开发的地理动因（气候变暖导致通航期延长）、资源争夺焦点（油气储量占全球未开发量22%）、地缘风险（环北极国家主权争议）"
+      },
+      "economicData": {
+        "routeShortening": 7000,
+        "unit": "公里",
+        "cargoIncrease": 40,
+        "unit2": "%",
+        "description": "上海-鹿特丹航程缩短7000公里，年货运量提升40%"
+      },
+      "geographicAnalysis": {
+        "naturalGeography": ["全球气候变化（北极冰川融化）", "洋流与航运条件"],
+        "humanGeography": ["国际资源竞争", "地缘政治博弈", "交通区位理论"]
+      },
+      "timeline": [
+        {
+          "date": "2020-01",
+          "event": "北极航线首次全年通航",
+          "description": "由于气候变暖，北极航线首次实现全年通航"
+        },
+        {
+          "date": "2023-06",
+          "event": "中俄签署北极合作协议",
+          "description": "中俄两国签署北极航线开发合作协议"
+        }
+      ],
+      "principle": "北极航线开发反映了全球气候变化对地理环境的影响。气候变暖导致北极冰川融化，使得原本被冰层覆盖的航线得以通航，缩短了亚欧之间的航运距离，同时也引发了极地资源竞争和地缘政治问题。",
+      "textbookLinks": [
+        {
+          "chapter": "必修一·第三章",
+          "section": "全球气候变化",
+          "page": 85
+        },
+        {
+          "chapter": "必修一·第二章",
+          "section": "洋流与航运",
+          "page": 52
+        }
+      ]
+    },
+    {
+      "id": "hebei_greensteel",
+      "name": "河北绿电+钢铁转型",
+      "title": "河北'绿电+钢铁'产业转型",
+      "category": "区域产业升级",
+      "lat": 39.9,
+      "lng": 116.4,
+      "heat": 88,
+      "economic": 85,
+      "climate": 90,
+      "conflict": 20,
+      "relatedKnowledge": ["能源资源分布", "区域协调发展", "产业升级", "可持续发展", "风光资源"],
+      "knowledgeChain": [
+        { "from": "河北'绿电+钢铁'产业转型", "to": "能源资源分布", "relation": "利用" },
+        { "from": "能源资源分布", "to": "风光资源", "relation": "包含" },
+        { "from": "河北'绿电+钢铁'产业转型", "to": "区域协调发展", "relation": "促进" },
+        { "from": "区域协调发展", "to": "产业升级", "relation": "推动" },
+        { "from": "产业升级", "to": "可持续发展", "relation": "实现" }
+      ],
+      "factors": {
+        "terrain": "华北平原",
+        "climate": "温带季风气候",
+        "resource": "风光资源丰富"
+      },
+      "chapters": ["能源资源分布", "区域协调发展", "产业升级"],
+      "cases": [
+        {
+          "id": "c3",
+          "title": "唐山发展绿电的核心优势",
+          "summary": "唐山地区风光资源丰富，为发展绿电提供了良好的自然条件。"
+        },
+        {
+          "id": "c4",
+          "title": "生态影响",
+          "summary": "绿电+钢铁转型减少了酸雨等环境问题，改善了区域生态环境。"
+        }
+      ],
+      "video": {
+        "url": "https://example.com/videos/hebei_greensteel.mp4",
+        "duration": 180,
+        "description": "钢铁厂屋顶光伏板实景，3D唐山地图展示钢铁厂分布与风电场分布"
+      },
+      "audio": {
+        "url": "https://example.com/audio/hebei_greensteel.mp3",
+        "script": "对比2015年与2025年唐山产业结构（钢铁占比从50%降至30%），解析'绿电替代焦炭'的技术路径（全流程碳足迹追踪）"
+      },
+      "dynamicModel": {
+        "parameters": [
+          { "name": "绿电占比", "min": 0, "max": 100, "default": 30, "unit": "%" },
+          { "name": "环保投入", "min": 0, "max": 100, "default": 50, "unit": "亿元" }
+        ],
+        "indicators": [
+          { "name": "烟囱排放量", "type": "bar", "unit": "万吨/年" },
+          { "name": "PM2.5浓度", "type": "heatmap", "unit": "μg/m³" }
+        ]
+      },
+      "policyDebate": {
+        "pros": "绿电转型应全面关停小型钢厂",
+        "cons": "保留部分钢厂保障就业更重要",
+        "solution": "建立钢铁产业绿色转型示范区"
+      },
+      "geographicAnalysis": {
+        "naturalGeography": ["风能/太阳能资源分布", "工业区位因素"],
+        "humanGeography": ["产业升级", "循环经济", "区域协调发展"]
+      },
+      "comparisonData": {
+        "year2015": { "steelRatio": 50, "greenEnergyRatio": 5 },
+        "year2025": { "steelRatio": 30, "greenEnergyRatio": 35 }
+      },
+      "timeline": [
+        {
+          "date": "2015-01",
+          "event": "河北启动钢铁产业转型",
+          "description": "河北省启动钢铁产业绿色转型计划"
+        },
+        {
+          "date": "2023-09",
+          "event": "绿电+钢铁项目投产",
+          "description": "首个绿电+钢铁一体化项目正式投产"
+        }
+      ],
+      "principle": "河北绿电+钢铁转型体现了区域产业升级与可持续发展的结合。通过利用当地丰富的风光资源，发展绿色电力，替代传统能源，实现钢铁产业的绿色转型，既促进了区域经济发展，又改善了生态环境。",
+      "textbookLinks": [
+        {
+          "chapter": "必修二·第四章",
+          "section": "区域产业升级",
+          "page": 120
+        },
+        {
+          "chapter": "必修三·第五章",
+          "section": "区域可持续发展",
+          "page": 145
+        }
+      ]
+    },
+    {
+      "id": "trade_incentive",
+      "name": "以旧换新消费地理",
+      "title": "'以旧换新'政策下的消费地理",
+      "category": "经济与区域发展",
+      "lat": 39.9,
+      "lng": 116.4,
+      "heat": 75,
+      "economic": 82,
+      "climate": 30,
+      "conflict": 15,
+      "relatedKnowledge": ["消费空间结构", "中心地理论", "区域经济发展", "消费流向", "政策影响"],
+      "knowledgeChain": [
+        { "from": "'以旧换新'政策下的消费地理", "to": "消费空间结构", "relation": "改变" },
+        { "from": "消费空间结构", "to": "中心地理论", "relation": "基于" },
+        { "from": "'以旧换新'政策下的消费地理", "to": "区域经济发展", "relation": "促进" },
+        { "from": "消费空间结构", "to": "消费流向", "relation": "形成" }
+      ],
+      "factors": {
+        "terrain": "平原地区",
+        "climate": "温带季风气候",
+        "resource": "消费市场"
+      },
+      "chapters": ["消费空间结构", "中心地理论", "区域经济发展"],
+      "cases": [
+        {
+          "id": "c5",
+          "title": "消费流向分析",
+          "summary": "以旧换新政策促进了消费流向，形成了明显的消费地理分布特征。"
+        },
+        {
+          "id": "c6",
+          "title": "SWOT分析",
+          "summary": "通过SWOT分析，可以优化政策实施效果，促进区域消费升级。"
+        }
+      ],
+      "video": {
+        "url": "https://example.com/videos/trade_incentive.mp4",
+        "duration": 120,
+        "description": "消费热力地图显示石家庄、唐山、保定三地的家电以旧换新订单密度"
+      },
+      "audio": {
+        "url": "https://example.com/audio/trade_incentive.mp3",
+        "script": "分析政策效果差异（如'石家庄补贴力度比保定高20%，但订单量仅多15%'），揭示消费行为的非线性特征"
+      },
+      "consumptionSimulator": {
+        "parameters": [
+          { "name": "补贴金额", "min": 0, "max": 5000, "default": 2000, "unit": "元" },
+          { "name": "产品类型", "options": ["家电", "汽车", "电子产品"], "default": "家电" }
+        ],
+        "indicators": [
+          { "name": "不同收入群体购买偏好", "type": "pie" },
+          { "name": "京津冀三地物流企业订单分配", "type": "flow" }
+        ]
+      },
+      "swotAnalysis": {
+        "strengths": ["政策支持力度大", "消费需求旺盛"],
+        "weaknesses": ["农村地区网络覆盖率低", "物流成本较高"],
+        "opportunities": ["家电下乡政策叠加", "邮政网点延伸服务"],
+        "threats": ["区域发展不平衡", "消费能力差异"],
+        "recommendations": "应针对农村地区（低网络覆盖率）推出'以旧换新+家电下乡'组合政策，利用邮政网点延伸服务触角。"
+      },
+      "geographicAnalysis": {
+        "naturalGeography": [],
+        "humanGeography": ["消费行为空间差异", "产业链重构"],
+        "regionalGeography": ["城乡消费梯度", "市场腹地划分"]
+      },
+      "consumptionHeatmap": {
+        "cities": [
+          { "name": "石家庄", "orders": 8500, "subsidy": 2500, "income": 45000 },
+          { "name": "唐山", "orders": 6200, "subsidy": 2000, "income": 42000 },
+          { "name": "保定", "orders": 5800, "subsidy": 2000, "income": 38000 }
+        ]
+      },
+      "timeline": [
+        {
+          "date": "2023-03",
+          "event": "以旧换新政策发布",
+          "description": "国家发布以旧换新消费刺激政策"
+        },
+        {
+          "date": "2023-12",
+          "event": "政策效果评估",
+          "description": "政策实施效果显著，消费地理分布呈现新特征"
+        }
+      ],
+      "principle": "以旧换新政策下的消费地理反映了消费空间结构的变化。政策通过补贴等方式刺激消费，改变了消费流向和空间分布，体现了中心地理论在消费地理中的应用。",
+      "textbookLinks": [
+        {
+          "chapter": "必修二·第三章",
+          "section": "消费空间结构",
+          "page": 95
+        },
+        {
+          "chapter": "必修二·第二章",
+          "section": "中心地理论",
+          "page": 68
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "arctic_route",
+      "title": "北极航线开发与极地资源竞争",
+      "lat": 75.0,
+      "lng": -40.0,
+      "heat": 95
+    },
+    {
+      "id": "hebei_greensteel",
+      "title": "河北'绿电+钢铁'产业转型",
+      "lat": 39.9,
+      "lng": 116.4,
+      "heat": 88
+    },
+    {
+      "id": "trade_incentive",
+      "title": "'以旧换新'政策下的消费地理",
+      "lat": 39.9,
+      "lng": 116.4,
+      "heat": 75
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "type": "single",
+      "stem": "北极航线通航条件改善的关键自然因素是？",
+      "options": ["海平面下降", "气候变暖", "洋流变化", "地壳运动"],
+      "answer": 1,
+      "explain": "气候变暖导致北极冰川融化，使得原本被冰层覆盖的航线得以通航。",
+      "textbookLink": {
+        "chapter": "必修一·第三章",
+        "section": "全球气候变化",
+        "page": 85,
+        "highlight": "北极放大效应"
+      }
+    },
+    {
+      "id": "q2",
+      "type": "single",
+      "stem": "中俄合作开发反映的国际关系原则是？",
+      "options": ["单边主义", "多边化治理", "霸权主义", "孤立主义"],
+      "answer": 1,
+      "explain": "中俄两国在北极航线开发上的合作体现了多边化治理的国际关系原则。",
+      "textbookLink": {
+        "chapter": "必修二·第五章",
+        "section": "国际经济合作",
+        "page": 120,
+        "highlight": "资源地缘政治"
+      }
+    },
+    {
+      "id": "q3",
+      "type": "single",
+      "stem": "唐山发展绿电的核心优势是？",
+      "options": ["矿产资源丰富", "风光资源丰富", "水资源丰富", "土地资源丰富"],
+      "answer": 1,
+      "explain": "唐山地区风光资源丰富，为发展绿电提供了良好的自然条件。",
+      "textbookLink": {
+        "chapter": "必修一·第四章",
+        "section": "能源资源",
+        "page": 95,
+        "highlight": "华北地区风能分布图"
+      }
+    },
+    {
+      "id": "q4",
+      "type": "truefalse",
+      "stem": "钢铁产业'绿电化'对京津冀的生态影响是？",
+      "options": ["加剧雾霾", "减少酸雨", "加剧水资源短缺", "增加生物多样性"],
+      "answer": 1,
+      "explain": "绿电替代传统能源，减少了污染物排放，从而减少了酸雨等环境问题。",
+      "textbookLink": {
+        "chapter": "必修二·第三章",
+        "section": "产业布局",
+        "page": 88,
+        "highlight": "环境外部性内部化"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "match",
+      "stem": "在'北极航线开发'案例中，请匹配相关的地理知识点：",
+      "knowledgeItems": [
+        "全球气候变化",
+        "洋流与航运条件",
+        "地缘政治",
+        "极地资源开发",
+        "国际航运",
+        "海平面上升",
+        "区域经济发展"
+      ],
+      "answer": [0, 1, 2, 3, 4],
+      "requiredMatches": 3,
+      "explain": "北极航线开发涉及气候变化、航运条件、地缘政治、极地资源等多个地理知识点。"
+    }
+  ]
+}
