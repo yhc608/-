@@ -1,11 +1,11 @@
-# ========================================
+﻿# ========================================
 # EduGlobe 数据库迁移脚本
 # 功能：一键导入所有数据库表结构和初始数据
 # 使用方法：.\migrate-database.ps1
 # ========================================
 
 param(
-    [string]$Host = "localhost",
+    [string]$DBHost = "localhost",
     [string]$User = "root",
     [string]$Password = "CHENhaoyu0608..",
     [string]$Database = "eduglobe_db"
@@ -71,7 +71,7 @@ foreach ($sqlFile in $sqlFiles) {
     
     try {
         # 执行 SQL 文件
-        $result = & mysql -h $Host -u $User -p$Password < $filePath 2>&1
+        $result = Get-Content $filePath -Raw | & mysql -h $DBHost -u $User -p$Password 2>&1
         
         if ($LASTEXITCODE -eq 0) {
             Write-Host "✅ 成功导入" -ForegroundColor Green
@@ -94,7 +94,7 @@ foreach ($sqlFile in $sqlFiles) {
 Write-Host "[3/6] 验证数据库表..." -ForegroundColor Yellow
 
 try {
-    $tableCount = & mysql -h $Host -u $User -p$Password -D $Database -e "SELECT COUNT(*) as count FROM information_schema.tables WHERE table_schema='$Database';" --skip-column-names 2>&1
+    $tableCount = & mysql -h $DBHost -u $User -p$Password -D $Database -e "SELECT COUNT(*) as count FROM information_schema.tables WHERE table_schema='$Database';" --skip-column-names 2>&1
     
     if ($LASTEXITCODE -eq 0) {
         Write-Host "✅ 数据库表数量: $tableCount" -ForegroundColor Green
@@ -119,7 +119,7 @@ $keyTables = @(
 
 try {
     foreach ($table in $keyTables) {
-        $exists = & mysql -h $Host -u $User -p$Password -D $Database -e "SHOW TABLES LIKE '$table';" --skip-column-names 2>&1
+        $exists = & mysql -h $DBHost -u $User -p$Password -D $Database -e "SHOW TABLES LIKE '$table';" --skip-column-names 2>&1
         
         if ($exists -match $table) {
             Write-Host "  ✅ $table" -ForegroundColor Green
@@ -146,7 +146,7 @@ try {
     )
     
     foreach ($table in $analyzeTables) {
-        $result = & mysql -h $Host -u $User -p$Password -D $Database -e "ANALYZE TABLE $table;" 2>&1
+        $result = & mysql -h $DBHost -u $User -p$Password -D $Database -e "ANALYZE TABLE $table;" 2>&1
         if ($LASTEXITCODE -eq 0) {
             Write-Host "  ✅ 已优化: $table" -ForegroundColor Green
         }
@@ -163,7 +163,7 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "成功导入: $successCount 个文件" -ForegroundColor Green
 Write-Host "失败/跳过: $failCount 个文件" -ForegroundColor $(if ($failCount -gt 0) { "Red" } else { "Gray" })
 Write-Host "数据库名: $Database" -ForegroundColor Cyan
-Write-Host "主机地址: $Host" -ForegroundColor Cyan
+Write-Host "主机地址: $DBHost" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
