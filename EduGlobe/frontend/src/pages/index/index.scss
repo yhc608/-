@@ -85,41 +85,71 @@
 // 快捷操作区
 .quick-actions {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-base);
   margin-bottom: var(--spacing-large);
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
 
   .action-card {
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
   }
 
   .action-content {
     .action-title {
       margin: 0 0 var(--spacing-small);
       font-size: 20px;
-      font-weight: 600;
+      font-weight: 700;
       color: var(--color-text-primary);
+      letter-spacing: -0.5px;
     }
 
     .action-description {
       margin: 0 0 var(--spacing-base);
-      font-size: 14px;
+      font-size: 15px;
       color: var(--color-text-secondary);
+      font-weight: 500;
     }
 
     .action-meta {
       display: flex;
-      gap: var(--spacing-base);
+      gap: var(--spacing-large);
+      padding: var(--spacing-small);
+      background: rgba(0, 0, 0, 0.03);
+      border-radius: var(--radius-small);
+      margin-bottom: var(--spacing-small);
 
       .meta-item {
         display: flex;
         align-items: center;
-        gap: 4px;
-        font-size: 14px;
-        color: var(--color-text-secondary);
+        gap: 6px;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--color-text-primary);
 
         .material-icons {
-          font-size: 18px;
+          font-size: 20px;
+          color: var(--color-primary);
         }
       }
     }
@@ -154,8 +184,17 @@
 
   .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing-base);
+    
+    // 响应式：小屏幕时切换为2列
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .feature-card {

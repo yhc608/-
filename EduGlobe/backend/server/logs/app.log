@@ -19,3 +19,16 @@
 {"level":"info","message":"🚀 服务器运行在端口 3000","service":"eduglobe-api","timestamp":"2026-03-16 18:11:37"}
 {"level":"info","message":"📚 环境: development","service":"eduglobe-api","timestamp":"2026-03-16 18:11:37"}
 {"level":"info","message":"🌐 API地址: http://localhost:3000/api","service":"eduglobe-api","timestamp":"2026-03-16 18:11:37"}
+{"level":"info","message":"数据库连接池创建成功","service":"eduglobe-api","timestamp":"2026-03-23 10:38:09"}
+{"level":"info","message":"数据库连接成功","service":"eduglobe-api","timestamp":"2026-03-23 10:38:09"}
+{"level":"info","message":"🚀 服务器运行在端口 3000","service":"eduglobe-api","timestamp":"2026-03-23 10:38:09"}
+{"level":"info","message":"📚 环境: development","service":"eduglobe-api","timestamp":"2026-03-23 10:38:09"}
+{"level":"info","message":"🌐 API地址: http://localhost:3000/api","service":"eduglobe-api","timestamp":"2026-03-23 10:38:09"}
+{"level":"info","message":"数据库连接池创建成功","service":"eduglobe-api","timestamp":"2026-03-23 10:54:18"}
+{"level":"info","message":"数据库连接成功","service":"eduglobe-api","timestamp":"2026-03-23 10:54:18"}
+{"level":"info","message":"🚀 服务器运行在端口 3000","service":"eduglobe-api","timestamp":"2026-03-23 10:54:18"}
+{"level":"info","message":"📚 环境: development","service":"eduglobe-api","timestamp":"2026-03-23 10:54:18"}
+{"level":"info","message":"🌐 API地址: http://localhost:3000/api","service":"eduglobe-api","timestamp":"2026-03-23 10:54:18"}
+{"level":"info","message":{"duration":"16ms","ip":"::1","method":"GET","path":"/api/geopolitics/hotspots","status":404,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"},"service":"eduglobe-api","timestamp":"2026-03-23 11:00:29"}
+{"level":"info","message":{"duration":"4ms","ip":"::1","method":"GET","path":"/api/geopolitics/hotspots","status":404,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"},"service":"eduglobe-api","timestamp":"2026-03-23 11:00:34"}
+{"level":"info","message":{"duration":"3ms","ip":"::1","method":"GET","path":"/api/geopolitics/hotspots","status":404,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"},"service":"eduglobe-api","timestamp":"2026-03-23 11:00:51"}

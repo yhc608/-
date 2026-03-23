@@ -505,16 +505,59 @@ const skipRecommendation = () => {
   info('已收藏', '课程已添加到稍后学习列表')
 }
 
+// 生成本周日期的函数
+const generateWeekDays = () => {
+  const days = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
+  const today = new Date()
+  const currentDay = today.getDay() // 0-6, 0是周日
+  const weekStart = new Date(today)
+  
+  // 获取本周周一（如果今天是周日，周日作为本周最后一天）
+  const mondayOffset = currentDay === 0 ? -6 : 1 - currentDay
+  weekStart.setDate(today.getDate() + mondayOffset)
+  
+  const weekDaysData = []
+  
+  // 生成周一到周日的数据
+  for (let i = 0; i < 7; i++) {
+    const date = new Date(weekStart)
+    date.setDate(weekStart.getDate() + i)
+    
+    const dayOfWeek = date.getDay()
+    const dayName = days[dayOfWeek]
+    const dateStr = `${date.getMonth() + 1}/${date.getDate()}`
+    const isToday = date.toDateString() === today.toDateString()
+    
+    // 模拟任务数据（可以后续从API获取）
+    let tasks = 0
+    let completed = false
+    
+    // 假设周一到周三已完成
+    if (i < 3 && date < today) {
+      tasks = Math.floor(Math.random() * 3) + 2 // 2-4个任务
+      completed = true
+    } else if (date <= today) {
+      tasks = Math.floor(Math.random() * 4) + 1 // 1-4个任务
+      completed = date < today
+    } else {
+      tasks = Math.floor(Math.random() * 3) + 1 // 1-3个任务
+      completed = false
+    }
+    
+    weekDaysData.push({
+      name: dayName,
+      date: dateStr,
+      isToday,
+      tasks,
+      completed
+    })
+  }
+  
+  return weekDaysData
+}
+
 // 本周学习计划
-const weekDays = ref([
-  { name: '周一', date: '12/11', isToday: false, tasks: 3, completed: true },
-  { name: '周二', date: '12/12', isToday: false, tasks: 2, completed: true },
-  { name: '周三', date: '12/13', isToday: false, tasks: 4, completed: true },
-  { name: '周四', date: '12/14', isToday: true, tasks: 3, completed: false },
-  { name: '周五', date: '12/15', isToday: false, tasks: 2, completed: false },
-  { name: '周六', date: '12/16', isToday: false, tasks: 1, completed: false },
-  { name: '周日', date: '12/17', isToday: false, tasks: 0, completed: false }
-])
+const weekDays = ref(generateWeekDays())
 
 // 最近学习记录
 const recentStudies = ref([
